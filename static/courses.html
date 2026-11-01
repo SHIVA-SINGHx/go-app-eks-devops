@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="A practical, free system design roadmap with curated resources for every topic.">
+    <title>System Design Roadmap — Blueprint</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/home" aria-label="Blueprint home"><span class="brand-mark">B</span> blueprint<span class="brand-dot">.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="/home">Home</a>
+            <a class="active" href="/courses">Roadmap</a>
+            <a href="/about">About</a>
+            <a href="/contact">Resources</a>
+        </nav>
+        <a class="header-cta" href="#roadmap">Start learning <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+        <section class="page-hero roadmap-hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR SYSTEM DESIGN LEARNING PATH</p>
+                <h1>Think bigger.<br><span>Design systems</span> that scale.</h1>
+                <p class="hero-description">A step-by-step roadmap from core building blocks to real-world architecture. Learn at your own pace, with a hand-picked resource for every topic.</p>
+                <a class="button button-primary" href="#roadmap">Explore the roadmap <span aria-hidden="true">↓</span></a>
+                <div class="hero-proof"><span class="avatar-stack" aria-hidden="true"><i>01</i><i>02</i><i>03</i></span><span>Free resources. Clear next steps.</span></div>
+            </div>
+            <div class="hero-visual" aria-label="Illustration of connected system components">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="diagram-card diagram-client"><span class="diagram-icon">↗</span><span>Client</span></div>
+                <div class="diagram-card diagram-api"><span class="diagram-icon">⌘</span><span>API</span></div>
+                <div class="diagram-card diagram-cache"><span class="diagram-icon">ϟ</span><span>Cache</span></div>
+                <div class="diagram-card diagram-db"><span class="diagram-icon">▤</span><span>Database</span></div>
+                <div class="diagram-line line-client"></div>
+                <div class="diagram-line line-api"></div>
+                <div class="diagram-line line-db"></div>
+                <span class="diagram-label label-left">REQUEST</span>
+                <span class="diagram-label label-right">RESPONSE</span>
+                <span class="diagram-spark spark-one">✳</span>
+                <span class="diagram-spark spark-two">✳</span>
+            </div>
+        </section>
+
+        <section class="stats-strip" aria-label="Roadmap overview">
+            <div><strong>06</strong><span>learning stages</span></div>
+            <div><strong>20</strong><span>essential topics</span></div>
+            <div><strong>100%</strong><span>learn at your pace</span></div>
+            <div class="stats-note"><span class="status-pulse"></span> Built for curious engineers</div>
+        </section>
+
+        <section class="roadmap-section" id="roadmap">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE LEARNING PATH</p>
+                    <h2>One step at a time.</h2>
+                    <p class="section-description">Build a strong foundation, then connect the pieces into complete systems.</p>
+                </div>
+                <div class="progress-card" aria-live="polite">
+                    <div class="progress-top"><span>Your progress</span><strong data-progress-label>0 / 20 topics</strong></div>
+                    <div class="progress-track"><span data-progress-fill></span></div>
+                </div>
+            </div>
+
+            <div class="roadmap-tools">
+                <label class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input type="search" data-topic-search placeholder="Find a topic..." aria-label="Search roadmap topics">
+                    <kbd>/</kbd>
+                </label>
+                <span class="tools-hint">Pick a topic, explore its resource, then mark it done.</span>
+            </div>
+
+            <div class="roadmap-list">
+                <section class="roadmap-stage" data-stage-section>
+                    <div class="stage-marker"><span>01</span><i></i></div>
+                    <div class="stage-content">
+                        <div class="stage-heading"><div><p class="stage-kicker">GET THE BASICS RIGHT</p><h3>Foundations</h3></div><span class="stage-count">3 TOPICS</span></div>
+                        <div class="topic-grid">
+                            <article class="topic-card" data-topic-card data-topic-id="networking" data-search="networking internet tcp ip dns">
+                                <div class="topic-card-top"><span class="topic-icon icon-blue">⌁</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark Networking essentials complete">✓</button></div>
+                                <h4>Networking essentials</h4><p>Understand DNS, TCP/IP, latency, and how requests travel.</p>
+                                <a class="resource-link" href="https://www.cloudflare.com/learning/network-layer/what-is-a-computer-network/" target="_blank" rel="noopener noreferrer">Cloudflare · Networking basics <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="http" data-search="http api rest protocols">
+                                <div class="topic-card-top"><span class="topic-icon icon-violet">⌘</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark HTTP and APIs complete">✓</button></div>
+                                <h4>HTTP &amp; APIs</h4><p>Explore requests, responses, REST, and API design fundamentals.</p>
+                                <a class="resource-link" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" target="_blank" rel="noopener noreferrer">MDN · HTTP overview <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="databases" data-search="databases sql nosql storage">
+                                <div class="topic-card-top"><span class="topic-icon icon-orange">▤</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark databases complete">✓</button></div>
+                                <h4>Databases</h4><p>Compare relational and NoSQL models, indexes, and query patterns.</p>
+                                <a class="resource-link" href="https://www.prisma.io/dataguide/intro/intro-to-databases" target="_blank" rel="noopener noreferrer">Prisma · Database concepts <span>↗</span></a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="roadmap-stage" data-stage-section>
+                    <div class="stage-marker"><span>02</span><i></i></div>
+                    <div class="stage-content">
+                        <div class="stage-heading"><div><p class="stage-kicker">THE BUILDING BLOCKS</p><h3>Core components</h3></div><span class="stage-count">4 TOPICS</span></div>
+                        <div class="topic-grid">
+                            <article class="topic-card" data-topic-card data-topic-id="load-balancing" data-search="load balancing traffic availability">
+                                <div class="topic-card-top"><span class="topic-icon icon-green">⇄</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark load balancing complete">✓</button></div>
+                                <h4>Load balancing</h4><p>Distribute traffic across servers and understand common strategies.</p>
+                                <a class="resource-link" href="https://www.nginx.com/resources/glossary/load-balancing/" target="_blank" rel="noopener noreferrer">NGINX · Load balancing <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="caching" data-search="caching cache redis performance">
+                                <div class="topic-card-top"><span class="topic-icon icon-orange">ϟ</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark caching complete">✓</button></div>
+                                <h4>Caching</h4><p>Reduce repeated work with cache patterns, TTLs, and invalidation.</p>
+                                <a class="resource-link" href="https://redis.io/docs/latest/develop/use/patterns/" target="_blank" rel="noopener noreferrer">Redis · Caching patterns <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="cdn" data-search="cdn content delivery network edge">
+                                <div class="topic-card-top"><span class="topic-icon icon-blue">◉</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark CDNs complete">✓</button></div>
+                                <h4>CDNs</h4><p>Serve content closer to users and make global delivery faster.</p>
+                                <a class="resource-link" href="https://www.cloudflare.com/learning/cdn/what-is-a-cdn/" target="_blank" rel="noopener noreferrer">Cloudflare · What is a CDN? <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="queues" data-search="queues messaging asynchronous kafka">
+                                <div class="topic-card-top"><span class="topic-icon icon-violet">≋</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark queues and messaging complete">✓</button></div>
+                                <h4>Queues &amp; messaging</h4><p>Decouple services with asynchronous messages and event streams.</p>
+                                <a class="resource-link" href="https://kafka.apache.org/documentation/" target="_blank" rel="noopener noreferrer">Apache Kafka · Documentation <span>↗</span></a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="roadmap-stage" data-stage-section>
+                    <div class="stage-marker"><span>03</span><i></i></div>
+                    <div class="stage-content">
+                        <div class="stage-heading"><div><p class="stage-kicker">DESIGN FOR GROWTH</p><h3>Data at scale</h3></div><span class="stage-count">3 TOPICS</span></div>
+                        <div class="topic-grid">
+                            <article class="topic-card" data-topic-card data-topic-id="replication" data-search="replication failover high availability">
+                                <div class="topic-card-top"><span class="topic-icon icon-blue">⧉</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark replication complete">✓</button></div>
+                                <h4>Replication</h4><p>Keep copies of data in sync and learn about leader-based systems.</p>
+                                <a class="resource-link" href="https://www.postgresql.org/docs/current/high-availability.html" target="_blank" rel="noopener noreferrer">PostgreSQL · High availability <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="sharding" data-search="sharding partitioning horizontal scaling">
+                                <div class="topic-card-top"><span class="topic-icon icon-violet">▦</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark sharding complete">✓</button></div>
+                                <h4>Sharding &amp; partitioning</h4><p>Split large datasets across machines and choose partition keys.</p>
+                                <a class="resource-link" href="https://www.mongodb.com/resources/products/capabilities/database-sharding-explained" target="_blank" rel="noopener noreferrer">MongoDB · Sharding explained <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="consistency" data-search="consistency transactions cap eventual">
+                                <div class="topic-card-top"><span class="topic-icon icon-green">◎</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark consistency models complete">✓</button></div>
+                                <h4>Consistency models</h4><p>Reason about consistency, transactions, and trade-offs in distributed data.</p>
+                                <a class="resource-link" href="https://jepsen.io/consistency" target="_blank" rel="noopener noreferrer">Jepsen · Consistency models <span>↗</span></a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="roadmap-stage" data-stage-section>
+                    <div class="stage-marker"><span>04</span><i></i></div>
+                    <div class="stage-content">
+                        <div class="stage-heading"><div><p class="stage-kicker">MAKE IT RESILIENT</p><h3>Reliability &amp; security</h3></div><span class="stage-count">3 TOPICS</span></div>
+                        <div class="topic-grid">
+                            <article class="topic-card" data-topic-card data-topic-id="reliability" data-search="reliability availability fault tolerance">
+                                <div class="topic-card-top"><span class="topic-icon icon-green">♡</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark reliability complete">✓</button></div>
+                                <h4>Reliability &amp; availability</h4><p>Design for failure, graceful degradation, and recovery.</p>
+                                <a class="resource-link" href="https://sre.google/sre-book/availability-table/" target="_blank" rel="noopener noreferrer">Google SRE · Availability <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="rate-limiting" data-search="rate limiting throttling quotas">
+                                <div class="topic-card-top"><span class="topic-icon icon-orange">◷</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark rate limiting complete">✓</button></div>
+                                <h4>Rate limiting</h4><p>Protect services and keep usage fair with practical algorithms.</p>
+                                <a class="resource-link" href="https://stripe.com/blog/rate-limiters" target="_blank" rel="noopener noreferrer">Stripe · Rate limiters <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="observability" data-search="observability monitoring logs metrics tracing">
+                                <div class="topic-card-top"><span class="topic-icon icon-blue">◌</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark observability complete">✓</button></div>
+                                <h4>Observability</h4><p>Use logs, metrics, and traces to understand system behavior.</p>
+                                <a class="resource-link" href="https://opentelemetry.io/docs/concepts/observability-primer/" target="_blank" rel="noopener noreferrer">OpenTelemetry · Observability primer <span>↗</span></a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="roadmap-stage" data-stage-section>
+                    <div class="stage-marker"><span>05</span><i></i></div>
+                    <div class="stage-content">
+                        <div class="stage-heading"><div><p class="stage-kicker">CONNECT THE PIECES</p><h3>Architecture patterns</h3></div><span class="stage-count">3 TOPICS</span></div>
+                        <div class="topic-grid">
+                            <article class="topic-card" data-topic-card data-topic-id="microservices" data-search="microservices monolith service architecture">
+                                <div class="topic-card-top"><span class="topic-icon icon-violet">⌘</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark service architecture complete">✓</button></div>
+                                <h4>Service architecture</h4><p>Understand monoliths, microservices, and when each fits.</p>
+                                <a class="resource-link" href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener noreferrer">Martin Fowler · Microservices <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="event-driven" data-search="event driven architecture events streams">
+                                <div class="topic-card-top"><span class="topic-icon icon-orange">⌁</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark event-driven architecture complete">✓</button></div>
+                                <h4>Event-driven systems</h4><p>Model events and build loosely coupled workflows.</p>
+                                <a class="resource-link" href="https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven" target="_blank" rel="noopener noreferrer">Microsoft · Event-driven architecture <span>↗</span></a>
+                            </article>
+                            <article class="topic-card" data-topic-card data-topic-id="system-design" data-search="system design primer interview practice">
+                                <div class="topic-card-top"><span class="topic-icon icon-green">✳</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark system design practice complete">✓</button></div>
+                                <h4>System design method</h4><p>Clarify requirements, estimate scale, and communicate trade-offs.</p>
+                                <a class="resource-link" href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener noreferrer">GitHub · System Design Primer <span>↗</span></a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="roadmap-stage" data-stage-section>
+                    <div class="stage-marker"><span>06</span><i></i></div>
+                    <div class="stage-content">
+                        <div class="stage-heading"><div><p class="stage-kicker">PUT YOUR KNOWLEDGE TO WORK</p><h3>Practice system design</h3></div><span class="stage-count">4 TOPICS</span></div>
+                        <div class="topic-grid">
+                            <article class="topic-card practice-card" data-topic-card data-topic-id="url-shortener" data-search="url shortener tinyurl redirects">
+                                <div class="topic-card-top"><span class="topic-icon icon-blue">↗</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark URL shortener practice complete">✓</button></div>
+                                <h4>Design a URL shortener</h4><p>Practice redirects, unique IDs, storage, and caching.</p>
+                                <a class="resource-link" href="https://github.com/donnemartin/system-design-primer#design-a-url-shortener-like-tinyurl" target="_blank" rel="noopener noreferrer">Primer · URL shortener <span>↗</span></a>
+                            </article>
+                            <article class="topic-card practice-card" data-topic-card data-topic-id="chat" data-search="chat messaging whatsapp realtime">
+                                <div class="topic-card-top"><span class="topic-icon icon-violet">◌</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark chat system practice complete">✓</button></div>
+                                <h4>Design a chat system</h4><p>Explore real-time delivery, presence, and message ordering.</p>
+                                <a class="resource-link" href="https://bytebytego.com/courses/system-design-interview/design-a-chat-system" target="_blank" rel="noopener noreferrer">ByteByteGo · Chat system <span>↗</span></a>
+                            </article>
+                            <article class="topic-card practice-card" data-topic-card data-topic-id="news-feed" data-search="news feed timeline social media">
+                                <div class="topic-card-top"><span class="topic-icon icon-orange">▤</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark news feed practice complete">✓</button></div>
+                                <h4>Design a news feed</h4><p>Think through fan-out, timelines, ranking, and freshness.</p>
+                                <a class="resource-link" href="https://github.com/donnemartin/system-design-primer#design-a-social-media-news-feed-system" target="_blank" rel="noopener noreferrer">Primer · News feed <span>↗</span></a>
+                            </article>
+                            <article class="topic-card practice-card" data-topic-card data-topic-id="video" data-search="video streaming youtube media">
+                                <div class="topic-card-top"><span class="topic-icon icon-green">▷</span><button class="complete-button" data-complete aria-pressed="false" aria-label="Mark video streaming practice complete">✓</button></div>
+                                <h4>Design video streaming</h4><p>Map uploads, encoding, storage, and global playback.</p>
+                                <a class="resource-link" href="https://github.com/donnemartin/system-design-primer#design-a-video-streaming-service-like-youtube" target="_blank" rel="noopener noreferrer">Primer · Video streaming <span>↗</span></a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <p class="no-results" data-no-results hidden>No topics found. Try another search.</p>
+        </section>
+
+        <section class="next-step">
+            <div><p class="eyebrow">KEEP GOING</p><h2>Learn the why, not just the what.</h2><p>Explore the resource library for books, guides, and tools to deepen your understanding.</p></div>
+            <a class="button button-light" href="/contact">Browse resources <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="/home"><span class="brand-mark">B</span> blueprint<span class="brand-dot">.</span></a>
+        <p>A practical map for learning how systems work.</p>
+        <span>Made for builders, one concept at a time.</span>
+    </footer>
+</body>
+</html>
